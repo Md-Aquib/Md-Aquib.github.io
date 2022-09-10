@@ -1,0 +1,11 @@
+body{
+    background-color:#0a192f
+}
+
+.navbar-brand,.nav-link{
+    color: #40e0d0;
+}
+
+.navbar-toggler{
+    border: none;
+}

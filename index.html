@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="describe" content="Md. Aquib Portfolio Website">
     <title>Md Aquib Portfolio</title>
-    <link rel="icon" href="/logo.png">
+    <link rel="icon" href="/myfavicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
 </head>
@@ -14,25 +17,77 @@
 
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"><img class="logo" src="/logo.png" alt="logo"></a>
           <div class="justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#tech">Tech Stack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#project">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Disabled</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
+            <button class="btn shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="#offcanvasRight">
+              <span>
+                <div class="toggle"></div>
+                <div class="toggle"></div>
+                <div class="toggle"></div>
+              </span>
+            </button>
           </div>
         </div>
     </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header justify-content-end">
+        <button type="button" class="btn-close btn-close-white text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="offcanvas-ul">
+          <li class="offcanvas-li">
+            <a class="link" href="#about">About</a>
+          </li>
+          <li class="offcanvas-li">
+            <a class="link" href="#tech">Tech Stack</a>
+          </li>
+          <li class="offcanvas-li">
+            <a class="link" href="#project">Projects</a>
+          </li>
+          <li class="offcanvas-li">
+            <a class="link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="full container d-flex align-items-center">
+      <div class="row">
+        <h6>Hi, I   am</h6>
+        <h3>Mohammad Aquib</h3>
+        <h5>An Computer Science Student.</h5>
+        <Currently>I wanted to be an Software Engineer. <br/> Currently working on some of my own projects.
+          <br/> And looking for opportunities to work and collabrate with others.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="full" id="about">
+      About
+    </div>
+    <div class="full" id="tech">
+      Tech
+    </div>
+    <div class="full"  id="project">
+      Project
+    </div>
+    <div class="full" id="contact">
+      Contact
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>

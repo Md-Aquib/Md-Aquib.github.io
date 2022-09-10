@@ -1,11 +1,80 @@
 body{
-    background-color:#0a192f
+    background-color:#0a192f;
 }
 
-.navbar-brand,.nav-link{
-    color: #40e0d0;
+.nav-link{
+    color:white;
+    font-family: 'Roboto Mono', monospace;
+    font-size:14px;
+}
+
+.offcanvas-ul{
+    list-style: none;
+}
+
+.offcanvas-li{
+    margin-bottom:30px;
+}
+
+.link{
+    color:white;
+    font-family: 'Roboto Mono', monospace;
+    font-size:22px;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color:turquoise;
+}
+
+.offcanvas{
+    background-color:#0a192f;
+}
+
+.logo{
+    height:64px;
 }
 
 .navbar-toggler{
     border: none;
 }
+
+.toggle {
+    direction:left;
+    width: 35px;
+    height:2px;
+    background-color:#40E0D0;
+    margin: 8px 0;
+}
+
+.toggle:nth-child(2){
+    width:20px;
+}
+
+.full{
+    color: white;
+    min-height:100vh;
+}
+
+h6{
+    color: #40E0D0;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+h3{
+    font-size:60px;
+}
+
+@media(min-width:780px){
+    .toggle{
+        display: none;
+    }
+}
+
+@media(max-width:780px){
+    .nav-link{
+        display: none;
+    }
+}
+

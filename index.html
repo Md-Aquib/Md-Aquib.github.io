@@ -10,14 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="logo" src="/logo.png" alt="logo"></a>
+          <a class="navbar-brand" href="/"><img class="logo" src="/logo.png" alt="logo"></a>
           <div class="justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -65,28 +67,101 @@
       </div>
     </div>
 
-    <div class="full container d-flex align-items-center">
+    <div class="full container main d-flex align-items-center">
       <div class="row">
-        <h6>Hi, I   am</h6>
-        <h3>Mohammad Aquib</h3>
-        <h5>An Computer Science Student.</h5>
-        <Currently>I wanted to be an Software Engineer. <br/> Currently working on some of my own projects.
-          <br/> And looking for opportunities to work and collabrate with others.
+        <h6 class="main-h6">Hi, I   am</h6>
+        <h3 class="main-h3 opacity-75">Mohammad Aquib.</h3>
+        <h5 class="main-h5 opacity-50">An Computer Science Student.</h5>
+        <p class="main-p text-muted">I wanted to be an Software Engineer. Currently <br/>working on my own projects.  And looking forward  
+        <br/>for opportunities to work and collabrate with others.
         </p>
       </div>
     </div>
-    <hr>
-    <div class="full" id="about">
-      About
+
+    <div class="full container d-flex align-items-center justify-content-center" id="about">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+          <h5 class="about-h5">About Me</h5>
+          <p class="about-p text-muted">Hi, My Name is Mohammad Aquib and I am currently pursuing
+            BTech CSE from Jamia Hamdard University , New Delhi.
+            I am in my 5th Semester Now. I got introduced to coding when
+            I was in my 11th Standard. And since then I always like to build 
+            something. Till now I had learned a lot more technologies. 
+            And keeps on learning and enriching my skills. I wanted to
+            make my career in coding. And looking forward for opportunities.   
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12" style="text-align:center;">
+          <img src="/img.jpg" id="img" alt="image">
+        </div>
+      </div>
     </div>
-    <div class="full" id="tech">
-      Tech
+
+    <div class="full container d-flex align-items-center" id="tech">
+      <div class="row">
+        <h5 class="about-h5">Tech Stack</h5>
+        <h6 class="tech-list">Languages</h6>
+        <span>
+          <img class="tech-img" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="python">
+          <img class="tech-img" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="html">
+          <img class="tech-img" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="css">
+          <img class="tech-img" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="javascript">
+        </span>
+        <h6 class="tech-list">Frameworks, Platforms & Libraries</h6>
+        <span>
+          <img class="tech-img" src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white" alt="Django">
+          <img class="tech-img" src="https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white" alt="Anaconda">
+          <img class="tech-img" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
+          <img class="tech-img" src="https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray" alt="DjangoRest">
+          <img class="tech-img" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React">
+          <img class="tech-img" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS">
+        </span>
+        <h6 class="tech-list">Databases</h6>
+        <span>
+          <img class="tech-img" src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+          <img class="tech-img" src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+          <img class="tech-img" src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+          <img class="tech-img" src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres">
+        </span>
+        <h6 class="tech-list">Hosting/SaaS</h6>
+        <span>
+          <img class="tech-img" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white" alt="Heroku">
+          <img class="tech-img" src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" alt="Netlify">
+          <img class="tech-img" src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" alt="Firebase">
+        </span>
+        <h6 class="tech-list">ML/DL</h6>
+        <span>
+          <img class="tech-img" src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="Numpy">
+          <img class="tech-img" src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+          <img class="tech-img" src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn">
+          <img class="tech-img" src="https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white" alt="SciPy">
+        </span>
+      </div>
     </div>
-    <div class="full"  id="project">
-      Project
+
+    <div class="full container d-flex align-items-center"  id="project">
+      <div class="row">
+        <h5 class="about-h5">Projects</h5>
+        <h6 class="text-muted">Projects will be display soon.</h6>
+      </div>
     </div>
-    <div class="full" id="contact">
-      Contact
+
+    <div class="full container d-flex align-items-center" id="contact">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+          <h5 class="about-h5">Contact</h5>
+          <p class="about-p text-muted">
+            I am currently open to work. And will be happy to learn and to contribute.
+            Or if you just wanted to get in touch. It will be nice to meet you.  
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12" style="text-align:center;">
+          <span>
+            <a class="icon" href="https://github.com/Md-Aquib"><img src="/github.png" alt="github"></a>
+            <a class="icon" href="https://www.linkedin.com/in/mohammad-aquib-970b1224a/"><img src="/linkedin.png" alt="linkedin"></a>
+          </span>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

@@ -55,8 +55,7 @@ body{
 }
 
 .toggle {
-    direction:left;
-    width: 35px;
+    width:35px;
     height:2px;
     background-color:#40E0D0;
     margin: 8px 0;

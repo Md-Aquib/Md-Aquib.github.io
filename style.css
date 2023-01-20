@@ -1,0 +1,308 @@
+.navbar{
+    background-color:#EEF1FF;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.navbar-brand{
+    font-family: 'Marck Script', cursive;
+    font-size: xx-large;
+    font-weight:500;
+}
+
+.center-tab{
+    margin-left:50px;
+}
+
+.nav-link{
+    color: black;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.center-tab .nav-link::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.center-tab .nav-link:hover::before{
+    transform: scaleX(1);
+}
+
+.offcanvas{
+    opacity:99%;
+}
+
+.offcanvas-title{
+    margin-left:45%;
+    font-family: 'Marck Script', cursive;
+    font-size:x-large;
+    font-weight:500;
+}
+
+.offcanvas-link{
+    margin-top:-34px;
+    list-style-type:none;
+}
+
+.offcanvas-link li{
+    margin-left:-30px;
+    font-size:14px;
+    padding-top:15px;
+}
+
+.offcanvas hr{
+    margin-left:-30px;
+}
+
+.offcanvas-btn{
+    display: none;
+    background-color:white;
+    border:white;
+    height:45px;
+    width:45px;
+    border-radius:50%;
+}
+
+.offcanvas-backdrop.show {
+    opacity: .0;
+}
+
+.toggle{
+    width:20px;
+    height:2px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.toggle:nth-child(1){
+    margin-left:2.5px;
+    width:70%;
+}
+
+.toggle:nth-child(3){
+    margin-left:4px;
+    width:50%;
+}
+
+.intro{
+    min-height:90vh;
+    background-color:#EEF1FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .container{
+    text-align: center;
+}
+
+.intro-img{
+    height:100%;
+    width:100%;
+    z-index:-1;
+}
+
+.intro-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro-text h3{
+    font-size:3rem;
+}
+
+.intro-text h1{
+    font-size:3.5rem;
+    font-weight:600;
+    font-family: 'Poppins', sans-serif;
+    margin-top:20px;
+}
+
+.intro-text button{
+    border: none;
+    background-color:#FFB26B;
+    padding:15px 40px;
+    margin-top:30px;
+    border-radius:30px;
+    font-weight: 600;
+}
+
+.about-me .container{
+    margin-top:30px;
+}
+
+.about-me .container h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding:30px;
+    color: #0A2647;
+}
+
+
+.about-me .container h5{
+    text-align: center;
+    padding-left:0px;
+}
+
+.about-me .container p{
+    padding:30px;
+    font-weight:450;
+}
+
+.tech-specs{
+    background-color: #FAF8F1;
+}
+
+.tech-stack{
+    margin-left:30px;
+    padding:30px;
+    justify-content: left;
+    margin-top:-20px;
+}
+
+.tech-specs h5{
+    margin-top:10px;
+}
+
+.tech-stack h6{
+    margin-top:20px;
+}
+
+.tech-stack img{
+    margin-top:10px;
+}
+
+.project .container{
+    margin-top:30px;
+}
+
+.project h1{
+    text-align: center;
+    padding:30px;
+    color: #0A2647;
+}
+
+.project img{
+    height:100%;
+    width:100%;
+}
+
+.project .img-text{
+    width:100%;
+    display: block;
+    text-align: center;
+    padding:20px 0px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project .row{
+    margin-bottom:30px;
+}
+
+.single-box{
+    background-color:#262626;
+    margin-top:20px;
+}
+
+.single-box a{
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.carousel-indicators{
+    left:0;
+    top: auto;
+    bottom:-15px;
+}
+
+.contact{
+    background-color:#EEEEEE;
+    margin-bottom:30px;
+}
+
+.contact .container{
+    padding:30px;
+}
+
+.contact h1{
+    text-align: center;
+    padding:30px;
+    color: #0A2647;   
+}
+
+.contact .row{
+    padding:20px 0px;
+}
+
+.contact .icons{
+    text-align: center;
+    padding:20px 0px;
+}
+
+.contact a{
+    color: #000;
+    text-decoration: none;
+}
+
+footer{
+    padding:30px;
+    text-align: center;
+    border-top:1px solid #eee;
+    font-weight:500;
+}
+
+
+@media(max-width:768px){
+    .nav{
+        display: none;
+    }
+    .navbar{
+        padding-left:5px;
+        padding-right:5px;
+        border-bottom:solid lightgray;
+        border-bottom-width: thin;
+    }
+    .offcanvas-btn{
+        display: block;
+    }
+}
+
+@media (max-width:767px){
+    .about-me .container h5{
+        margin-top:20px;
+    }
+    .tech-stack{
+        margin-left:0px;
+    }
+    .tech-specs{
+        margin-top:20px;
+    }
+}
+
+@media(max-width:320px){
+    .intro-text h3{
+        font-size:2rem;
+    }
+
+    .intro-text h1{
+        font-size:2.5rem;
+    }
+}

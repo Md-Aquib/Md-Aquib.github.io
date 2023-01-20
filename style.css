@@ -134,6 +134,11 @@
     margin-top:20px;
 }
 
+.intro-text a{
+    color: #000;
+    text-decoration: none;
+}
+
 .intro-text button{
     border: none;
     background-color:#FFB26B;
@@ -219,7 +224,20 @@
 .single-box{
     background-color:#262626;
     margin-top:20px;
+    border: none;
 }
+
+.i-tag{
+    background-color: white;
+    text-align: center;
+    padding-top:10px;
+}
+
+.i-tag .img-text{
+    background-color: #262626;
+}
+
+
 
 .single-box a{
     color: white;

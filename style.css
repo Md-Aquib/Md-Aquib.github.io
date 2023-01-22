@@ -148,6 +148,7 @@
     font-weight: 600;
 }
 
+
 .about-me .container{
     margin-top:30px;
 }
@@ -172,6 +173,7 @@
 
 .tech-specs{
     background-color: #FAF8F1;
+    border-radius:20px;
 }
 
 .tech-stack{
@@ -287,6 +289,40 @@ footer{
     font-weight:500;
 }
 
+.hidden{
+    opacity:0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.hidden-show{
+    opacity:1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+.appear{
+    opacity:0;
+    transition: all 3s;
+}
+
+.appear-show{
+    opacity:1;
+}
+
+.drop{
+    opacity:0;
+    filter: blur(2px);
+    transform: translateY(-2px);
+    transition: all 1s;
+}
+
+.drop-show{
+    opacity:1;
+    filter: blur(0px);
+    transform: translateY(0);
+}
 
 @media(max-width:768px){
     .nav{

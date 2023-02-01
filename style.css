@@ -75,6 +75,7 @@
     height:45px;
     width:45px;
     border-radius:50%;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .offcanvas-backdrop.show {
@@ -197,6 +198,7 @@
 
 .project .container{
     margin-top:30px;
+    margin-bottom:30px;
 }
 
 .project h1{
@@ -205,57 +207,67 @@
     color: #0A2647;
 }
 
+.card-list {
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+    height: 5px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:#eee;
+}
+
+.project .card {
+    height:300px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    margin: 0;
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+    margin-right:10px;
+    border:none;
+}
+
+
+.project .card:hover {
+    transform: scale(1.05);
+}
+
+
 .project img{
     height:100%;
     width:100%;
 }
 
-.project .img-text{
-    width:100%;
-    display: block;
+.project .card-body{
+    background-color: #282A3A;
+    color:#fff;
     text-align: center;
-    padding:20px 0px;
-    color: white;
+    padding:30px 0px;
+    opacity:85%;
+}
+
+.project h4{
     font-family: 'Roboto', sans-serif;
 }
 
-.project .row{
-    margin-bottom:30px;
-}
-
-.single-box{
-    background-color:#262626;
-    margin-top:20px;
-    border: none;
-}
-
-.i-tag{
-    background-color: white;
-    text-align: center;
-    padding-top:10px;
-}
-
-.i-tag .img-text{
-    background-color: #262626;
-}
-
-
-
-.single-box a{
-    color: white;
+.project a{
+    color: #fff;
     text-decoration: none;
-    font-weight: lighter;
-}
-
-.carousel-indicators{
-    left:0;
-    top: auto;
-    bottom:-15px;
 }
 
 .contact{
-    background-color:#EEEEEE;
-    margin-bottom:30px;
+    background-color:#DEF5E5;
+    margin:0px 10px 30px;
+    border-radius:15px;
 }
 
 .contact .container{

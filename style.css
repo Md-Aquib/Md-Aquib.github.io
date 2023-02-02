@@ -223,8 +223,8 @@
 }
 
 .project .card {
-    height:300px;
-    min-width: 250px;
+    height:350px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     transition: .2s;
@@ -265,7 +265,7 @@
 }
 
 .contact{
-    background-color:#DEF5E5;
+    background-color:#ECF9FF;
     margin:0px 10px 30px;
     border-radius:15px;
 }
@@ -277,7 +277,7 @@
 .contact h1{
     text-align: center;
     padding:30px;
-    color: #0A2647;   
+    color: #000;   
 }
 
 .contact .row{

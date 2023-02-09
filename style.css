@@ -259,6 +259,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.project .card-links{
+    display: flex;
+    justify-content: space-between;
+    margin-left:20px;
+    margin-right:20px;
+}
+
 .project a{
     color: #fff;
     text-decoration: none;
